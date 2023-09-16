@@ -1,0 +1,10 @@
+.album{
+  background-color: black;
+
+}
+
+.members{
+  width: 50%;
+  border: solid 2px red;
+  border-radius: 50%;
+}
