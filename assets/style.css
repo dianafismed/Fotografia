@@ -1,5 +1,5 @@
 /*          FONTS          */
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /*          GENERICS          */
 :root{
@@ -13,35 +13,64 @@ body{
 }
 
 main{
-  margin-top: 90px;
+  margin-top: 120px;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+li{
+  list-style-type: none;
+}
+
+#logo img{
+  width: 20%;
+  margin-left: 20%;
+  border-radius: 5px;
 }
 
 /*          INDEX          */
-#index_items h2{
+#index_items h1{
   margin: 3rem;
+  font-family: "Great Vibes";
 }
 
 #index_items img{
-  width: 80%;
+  width: 70%;
   padding: 10px;
 }
 
-/*          STUDIO          */
-#album{ 
-   
+/*          INTRO          */
+#intro_content{
+  background-color: black;
+  padding: 10px;
 }
 
-#album img{
-  width: 20%;
+#intro_content img{
   cursor: pointer;
   transition: 0.3s;
 }
-#album img:hover {opacity: 0.7;}
+#intro_content img:hover {opacity: 0.7;}
+
+#intro_content p{
+  position: relative;
+  top: -1.5%;
+  left: 25%;
+  color: whitesmoke;
+}
+
+/*          STUDIO          */
+
+
 
 
 
 /*          MEMBERS          */
-#members{background-color: var(--member);}
+#members{
+  background-color: var(--member);
+}
 .card{
   background-color: var(--member);
   border: none;
@@ -50,10 +79,21 @@ main{
   background-color: rgb(16, 209, 209);
   padding: 10px 10px 0 10px;
   border-radius: 50%;
+}
+
+/*          FOOTER          */
+footer{
+  margin-top: 20px;
+  padding: 10px;
+  border-top: solid 1px black;
+}
+
+#footer_logo{
+  width: 30%;
+  border-radius: 5px;
+}
 
 
-
-
-/*          GENERICS          */
+@media (max-width: 320px) {
 
 }
