@@ -1,19 +1,18 @@
 /*          FONTS          */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 /*          GENERICS          */
 :root{
-  --member: rgb(232, 236, 236);
+  --back: rgb(232, 236, 236);
+  --text: whitesmoke;
+
 }
 
 body{
-  background-color: var(--member);
+  background-color: var(--back);
   max-width: 1024px;
   margin: auto;
-}
-
-main{
-  margin-top: 120px;
 }
 
 a{
@@ -21,39 +20,53 @@ a{
   color: gray;
 }
 
-li{
+ul{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-#logo img{
-  width: 20%;
-  margin-left: 20%;
+nav{
+  font-family: "Croissant One";
+  font-size: larger;
+}
+
+.logo{
+  width: 5rem;
   border-radius: 5px;
+  margin-left: 10px
 }
 
 /*          INDEX          */
-#index_items h1{
-  margin: 3rem;
+#index{
+  background-image: url('../images/index/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 120px;
+  border: double 5px var(--text);
+  border-radius: 5px;
   font-family: "Great Vibes";
+  padding: 2rem;
 }
-
 #index_items img{
   width: 70%;
-  padding: 10px;
+}
+#index h1{
+  margin-top: 2rem;
 }
 
 /*          INTRO          */
 #intro_content{
   background-color: black;
+  margin-top: 100px;
   padding: 10px;
 }
-
 #intro_content img{
   cursor: pointer;
   transition: 0.3s;
 }
 #intro_content img:hover {opacity: 0.7;}
-
 #intro_content p{
   position: relative;
   top: -1.5%;
@@ -62,8 +75,25 @@ li{
 }
 
 /*          STUDIO          */
+#studio_content{
+  margin-top: 120px;
+}
+#studio_content img{
+  
+}
 
+#studio_content_items{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
 
+#studio_content_items img{
+  margin: 5px;
+  padding: 0;
+  border: solid 1px rgb(75, 65, 7);
+  border-radius: 5px 20px;
+}
 
 
 
@@ -88,12 +118,27 @@ footer{
   border-top: solid 1px black;
 }
 
-#footer_logo{
+.footer_logo{
   width: 30%;
   border-radius: 5px;
+  margin: 1rem;
 }
 
 
-@media (max-width: 320px) {
-
+@media (max-width: 780px) {
+  .logo{
+    width: 4rem;
+  }
+  #index{
+    background-image: none;
+    margin-top: 50px;
+  }
+  #index_items img{
+    width: 50%;
+    margin: 5px;
+  }
+  #footer_logo{
+    display: none;
+  }
+  #intro_content img:hover {opacity: 100;}
 }
