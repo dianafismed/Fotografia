@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="assets/style.css">
   <title>Turma_505</title>
 </head>
-<body style="background-color: black;">
+<body>
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container">
-      <a id="logo" class="navbar-brand" href="index.html"><img src="images/index/logo.png" alt="Logo"></a>
+      <a id="logo" class="navbar-brand" href="index.html"><img class="logo" src="images/index/logo.png" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>  
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="studio.html">Estúdio</a></li>
           <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
         </ul>
       </div>
@@ -25,16 +26,36 @@
   </nav>
   <!-- Page Content -->
   <main>
-    <section id="studio_content_items" class="row container text-center">
-      <h1>Fotos</h1>
-      <div class="col-md-4">
+    <section class="row container text-center">
+      <div class="studio_content_items">
+        <h1>Fotos</h1>
+        <img src="images/studio/choco/album/5.JPG" alt="">
+        <img src="images/studio/choco/album/2.JPG" alt="">
+        <img src="images/studio/choco/album/3.JPG" alt="">
+        <img src="images/studio/choco/album/4.JPG" alt="">
+        <img src="images/studio/choco/album/6.JPG" alt="">
+        <img src="images/studio/choco/album/1.JPG" alt="">
+      </div>
+      <br>
+      <hr>
+      <div class="studio_content_items">
+        <h1>Making of</h1>
+        <img src="images/studio/choco/album/5.JPG" alt="">
+        <img src="images/studio/choco/album/2.JPG" alt="">
+        <img src="images/studio/choco/album/3.JPG" alt="">
+        <img src="images/studio/choco/album/4.JPG" alt="">
+        <img src="images/studio/choco/album/6.JPG" alt="">
+        <img src="images/studio/choco/album/1.JPG" alt="">
+      </div>
+      
+      <!--div class="col-md-4">
         <img class="img-fluid" src="images/studio/choco/album/1.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/2.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/3.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/5.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/6.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/3.jpg" alt="">
-      </div>
+      </!--div>
       <div class="col-md-4">
         <img class="img-fluid" src="images/studio/choco/album/5.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/6.jpg" alt="">
@@ -68,34 +89,32 @@
         <img class="img-fluid" src="images/studio/choco/album/6.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/3.jpg" alt="">
       </div>  
-      <div class="col-md-4">
+      <div-- class="col-md-4">
         <img class="img-fluid" src="images/studio/choco/album/5.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/6.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/3.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/1.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/2.jpg" alt="">
         <img class="img-fluid" src="images/studio/choco/album/3.jpg" alt="">
-      </div>    
+      </div-->    
     </section>
   </main>
+  <!-- Footer -->
   <!-- Footer -->
   <footer class="container">
     <div class="row text-center">
       <div class="col-md-4">
-        <p>Turma 505</p>
-        <img id="footer_logo" src="images/index/logo.png" alt="Turma 505">
+        <img id="footer_logo" class="footer_logo" src="images/index/logo.png" alt="Turma 505">
       </div>
       <div class="col-md-4">
-        <p>Atribuições</p>
-        <ul>
+        <ul id="footer_ad">
+          <li>Atribuições</li>
           <li><a href="https://pt.vecteezy.com/">Bootstrap</a></li>
-          <li><a href="https://pt.vecteezy.com/">         </a></li>
           <li><a href="https://pt.vecteezy.com/">Vecteezy</a></li>
         </ul>
       </div>
       <div class="col-md-4">
-        <p>USP</p>
-        <img id="footer_logo" src="images/index/usp.png" alt="">
+        <img id="footer_usp" class="footer_logo" src="images/index/usp.png" alt="">
       </div>
     </div>
   </footer>

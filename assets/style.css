@@ -6,7 +6,7 @@
 :root{
   --back: rgb(232, 236, 236);
   --text: whitesmoke;
-
+  --dourado: rgb(75, 75, 3);
 }
 
 body{
@@ -15,6 +15,9 @@ body{
   margin: auto;
 }
 
+main{
+  margin-top: 120px;
+}
 a{
   text-decoration: none;
   color: gray;
@@ -43,7 +46,6 @@ nav{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 120px;
   border: double 5px var(--text);
   border-radius: 5px;
   font-family: "Great Vibes";
@@ -59,7 +61,6 @@ nav{
 /*          INTRO          */
 #intro_content{
   background-color: black;
-  margin-top: 100px;
   padding: 10px;
 }
 #intro_content img{
@@ -75,26 +76,28 @@ nav{
 }
 
 /*          STUDIO          */
-#studio_content{
-  margin-top: 120px;
-}
 #studio_content img{
-  
+  border: dotted 2px black;
+  border-radius: 50%;
+  margin: 10px;
 }
-
-#studio_content_items{
+.studio_content_items{
   background-color: black;
-  color: white;
   padding: 10px;
+  border-radius: 5px;
 }
-
-#studio_content_items img{
-  margin: 5px;
-  padding: 0;
-  border: solid 1px rgb(75, 65, 7);
-  border-radius: 5px 20px;
+.studio_content_items h1{
+  color: var(--text);
+  font-family: Great Vibes;
+  font-size: 3rem;
+  margin-top: 1rem;
 }
-
+.studio_content_items img{
+  width: 40%;
+  margin: 1rem;
+  border: solid 2px var(--dourado);
+  border-radius: 5px 15px;
+}
 
 
 /*          MEMBERS          */
@@ -141,4 +144,10 @@ footer{
     display: none;
   }
   #intro_content img:hover {opacity: 100;}
+  .studio_content_items img{
+    width: 80%;
+    margin: 1rem;
+    border: solid 2px var(--dourado);
+    border-radius: 5px 15px;
+  }
 }
