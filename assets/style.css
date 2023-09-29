@@ -50,7 +50,7 @@ nav{
   border: double 5px var(--text);
   border-radius: 5px;
   font-family: "Great Vibes";
-  padding: 2rem;
+  padding: 1rem;
 }
 #index_items img{
   width: 50%;
