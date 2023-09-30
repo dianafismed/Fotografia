@@ -7,6 +7,7 @@
   --back: rgb(232, 236, 236);
   --text: whitesmoke;
   --dourado: rgb(75, 75, 3);
+  
 }
 
 body{
@@ -103,10 +104,11 @@ nav{
 
 /*          MEMBERS          */
 #members{
-  background-color: var(--member);
+  background-color: black;
+  color: var(--text);
 }
 .card{
-  background-color: var(--member);
+  background-color: black;
   border: none;
 }
 .members img{
