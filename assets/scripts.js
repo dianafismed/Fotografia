@@ -8,4 +8,6 @@ function inserirImagem(url) {
 //let page = document.getElementsByName('glasses.html');
 
 
+let imagens = document.getElementsByClassName('img-fluid'); // pega todas as imagens do documento
+
 
