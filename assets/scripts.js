@@ -5,9 +5,16 @@ function inserirImagem(url) {
   document.body.appendChild(img);
 }
 
-//let page = document.getElementsByName('glasses.html');
+function grow(){
+  console.log('entrou');
+}
 
 
-let imagens = document.getElementsByClassName('img-fluid'); // pega todas as imagens do documento
+const images = document.querySelectorAll('.img-grow'); // pega todas as imagens do documento
 
+for (let contador = 0; contador < images.length; contador++) {
+  images.onclick = function(){
+    grow();
+  }
 
+}
