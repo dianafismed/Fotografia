@@ -8,13 +8,10 @@ function inserirImagem(url) {
 function grow(){
   console.log('entrou');
 }
-
-
 const images = document.querySelectorAll('.img-grow'); // pega todas as imagens do documento
 
 for (let contador = 0; contador < images.length; contador++) {
   images.onclick = function(){
-    grow();
+    grow;
   }
-
 }
