@@ -142,6 +142,7 @@ footer{
   .logo{
     width: 4rem;
   }
+
   #index{
     background-image: none;
     margin-top: 50px;
@@ -151,21 +152,23 @@ footer{
     margin: 5px;
   }
 
+  #intro_content img:hover {opacity: 100;}
+
+  .studio_content_items img{
+    width: 80%;
+    margin: 1rem;
+    border: solid 2px var(--dourado);
+    border-radius: 5px 15px;
+  }
+
   .members img{
     background-color: var(--members_border);
     padding: 10px 5px 0 5px;
     border-radius: 50%;
     width: 50%;
   }
-
+  
   #footer_logo{
     display: none;
-  }
-  #intro_content img:hover {opacity: 100;}
-  .studio_content_items img{
-    width: 80%;
-    margin: 1rem;
-    border: solid 2px var(--dourado);
-    border-radius: 5px 15px;
   }
 }
