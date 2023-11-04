@@ -60,20 +60,33 @@ nav{
 }
 
 /*          INTRO          */
-#intro_content{
+#gallery{
   background-color: black;
+  color: var(--text);
   padding: 10px;
 }
-#intro_content img{
+.photo img{
   cursor: pointer;
-  transition: 0.3s;
+  width: 100%;
 }
-#intro_content img:hover {opacity: 0.7;}
-#intro_content p{
-  position: relative;
-  /*top: -1.5%;*/
-  left: 30%;
-  color: whitesmoke;
+.detail{
+  display: none;
+}
+#gallery .photo:target{
+  background-color: black;
+  position: fixed;
+  width: 30%;
+  top: 100px;
+  left: 25%;
+  padding: 10px;
+}
+#gallery .photo:target p{
+  display: none;
+}
+#gallery .photo:target .detail{
+  display: block;
+  color: var(--text);
+  font-size: larger;
 }
 
 /*          STUDIO          */
@@ -106,16 +119,21 @@ nav{
 
 
 /*          MEMBERS          */
+#members{
+  background-color: black;
+  color: var(--text);
+  border: double;
+  border-radius: 15px;
+}
+.members{
+  padding: 1rem;
+  border-radius: 10px;
+}
 .card{
   background-color: var(--background);
   border: none;
   justify-content: center;
   align-items: center;
-}
-.members{
-  background-color: var(--background);
-  color: var(--text);
-  padding: 1rem;
 }
 .members img{
   background-color: var(--members_border);
@@ -137,7 +155,7 @@ footer{
   margin: 1rem;
 }
 
-
+/*          MEDIAS          */
 @media (max-width: 780px) {
   .logo{
     width: 4rem;
@@ -152,7 +170,9 @@ footer{
     margin: 5px;
   }
 
-  #intro_content img:hover {opacity: 100;}
+  #gallery .photo:target{
+    width: 80%;
+  }
 
   .studio_content_items img{
     width: 80%;
@@ -169,6 +189,12 @@ footer{
   }
   
   #footer_logo{
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  #gallery .photo:target{
     display: none;
   }
 }
